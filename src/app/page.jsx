@@ -1,26 +1,11 @@
-import Logo from "@/components/kmni-logo";
 import { ServiceCard } from "@/components/service-card";
-import { Facebook, Instagram, Quote, Youtube } from 'lucide-react';
+import { Quote, } from 'lucide-react';
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <div className="navbar fixed top-0 left-0 right-0 z-50 p-6 shadow-md bg-white">
-        <div className="navbar-start">
-          <Logo />
-        </div>
-
-        <div className="navbar-center">
-          {/* Add navigation items here if needed */}
-        </div>
-
-        <div className="navbar-end">
-          <button className="rounded bg-green-700 px-6 py-2 text-white cursor-pointer hover:bg-green-400 active:bg-green-600 transition-all duration-200 ease-in-out active:scale-95">Give</button>
-        </div>
-      </div>
-
       {/* Hero Section */}
       <div className="relative h-screen w-full overflow-hidden">
         {/* Background Image */}
@@ -84,12 +69,14 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl lg:text-5xl font-bold text-left mb-8 mt-5">Encounter Jesus!</h2>
           <div className="prose prose-lg mx-auto text-left max-w-none">
-            <p className="mb-6 text-lg font-medium">
+            <p className="mb-6 text-lg">
               Kingdom Mission Network International is a place of the word, love, and power. You can join us to worship in person or online via our Facebook Channel. Click the button below to get assistance.
             </p>
-            <button className="rounded bg-green-700 px-6 py-2 text-white cursor-pointer hover:bg-green-400 active:bg-green-600 transition-all duration-200 ease-in-out active:scale-95">
-              WORSHIP WITH US
-            </button>
+            <Link href="/worship">
+              <button className="rounded bg-green-700 px-6 py-2 text-white cursor-pointer hover:bg-green-400 active:bg-green-600 transition-all duration-200 ease-in-out active:scale-95">
+                WORSHIP WITH US
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -143,39 +130,15 @@ export default function Home() {
             <p className="mb-6 text-lg font-medium">
               There’s a place for you to serve in God’s house. Join one of several service departments and join us as helpers of the work of God.
             </p>
-            <button className="rounded bg-white px-6 py-2 text-black cursor-pointer hover:opacity-90 active:opacity-75 transition-all duration-200 ease-in-out active:scale-95">
-              JOIN A DEPARTMENT
-            </button>
+            <Link href="/departments">
+              <button className="rounded bg-white px-6 py-2 text-black cursor-pointer hover:opacity-90 active:opacity-75 transition-all duration-200 ease-in-out active:scale-95">
+                JOIN A DEPARTMENT
+              </button>
+            </Link>
+
           </div>
         </div>
       </div>
-
-      {/* Footer Section */}
-      <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-15 mt-15">
-        <aside>
-          <Logo />
-          <p>
-            Copyright © {new Date().getFullYear()} - All right reserved
-          </p>
-        </aside>
-        <nav>
-          <h6 className="footer-title">Follow Us</h6>
-          <div className="grid grid-flow-col gap-4">
-            <Link href="https://web.facebook.com/kingdommissionnetworkint">
-            <Facebook />
-            </Link>
-            <Link href="https://web.facebook.com/kingdommissionnetworkint">
-            <Instagram />
-            </Link>
-            <Link href="https://www.instagram.com/gideonosei_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-            <Youtube />
-            </Link>
-            <Link href="https://web.facebook.com/kingdommissionnetworkint">
-            </Link>
-          </div>
-        </nav>
-      </footer>
-
     </>
   );
 }
