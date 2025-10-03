@@ -30,7 +30,26 @@ export default function Departments() {
           title="Prayer Warriors"
           description="Making tremendous power available, dynamic in its working, through prayer."
         />
-
+        <DepartmentCardKMNI
+          image="/women.jpg"
+          title="Women's Ministry"
+          description="Vibrant women impacting lives through faith, fellowship, and service."
+        />
+        <DepartmentCardKMNI
+          image="/children.jpg"
+          title="Children's Ministry"
+          description="Nurturing young hearts and minds in the love of Christ."
+        />
+        <DepartmentCardKMNI
+          image="/youth-pic.jpg"
+          title="Youth Ministry"
+          description="Empowering the next generation to live boldly for Christ."
+        />
+        <DepartmentCardKMNI
+          image="/welfare.jpg"
+          title="Welfare Department"
+          description="Caring for the needs of our church family and community."
+        />
       </div>
     </>
 
