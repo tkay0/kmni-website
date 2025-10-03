@@ -108,7 +108,7 @@ export default function Home() {
             />
             <ServiceCard
               title="Thursday Youth Service"
-              image="/praise.jpg"
+              image="/youth-service.jpg"
               time="6:00 PM"
               description="Empowering the next Generation."
             />
